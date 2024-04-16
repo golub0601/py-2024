@@ -23,3 +23,14 @@
 # 5,5,5 | 6,6,6
 # 7,7,7 | 8,8,8
 
+u = [
+    [1,1,1,2,2,2],
+    [3,3,3,4,4,4],
+    [5,5,5,6,6,6],
+    [7,7,7,8,8,8]
+    ]
+
+def podijeli(u, h, w):
+    x = ([[u[j][i] for i in range(w)] for j in range(h)])
+    return x
+print(podijeli(u, 2,3))
